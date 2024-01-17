@@ -1,0 +1,58 @@
+libraries:
+----------------------------
+python.exe -m pip install --upgrade pip
+pip install jupyterlab 
+pip install voila
+pip install scipy
+pip install bokeh
+pip install requests
+pip install matplotlib
+pip install pandas
+pip install numpy
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import bokeh
+%matplotlib inline
+
+install git extension after you install git on your machine:
+pip install --upgrade jupyterlab jupyterlab-git
+
+shorcuts:
+-----------------------------
+a - add cell above - 
+b - add cell below - 
+dd - delete cell - 
+Return - edit cell - 
+Escape - exit cell - 
+m - make cell Markdown - 
+y - make cell Python - 
+Ctrl Return - execute cell - 
+Shift Return - execute cell and jump to next - 
+z - undo the last command
+x - cut cell
+c - copy cell
+v - paste
+
+
+
+!head 
+----------------
+%alias head powershell -command "& {Get-Content %s -Head 10}"
+%head data/sales_data.csv
+
+crrelation int only
+----------------
+corr = sales.corr(numeric_only = True)
+
+
+array
+---------------------
+a[1(select as of value 1 which is after value 0):3 (up to ... but not including)]
+a[1:-1(up to but not including the last value)]
+--assign values to array:
+A[1] = np.array([10, 10, 10]) --will assign these values ot the second row in your matrice array
+A[2] = 99 --will assign value 99 to all columns on the 3rd row af the matrice array
+
+linked in courses
